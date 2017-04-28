@@ -4,7 +4,7 @@ go:
 
 install:
  - go get github.com/PuerkitoBio/goquery
- - export GOPATH=$GOPATH/Spider:GOPATH
+ - export GOPATH=$GOPATH/Spider:$GOPATH
 script:
  - go env
  - pwd
