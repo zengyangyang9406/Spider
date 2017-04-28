@@ -1,11 +1,9 @@
 language: go
 go:
-  - 1.8.1
+ - 1.8.1
 
 install:
-  - go get github.com/PuerkitoBio/goquery
+ - go get github.com/PuerkitoBio/goquery
 
 script:
-  - cd writeto
-  - go test -v
-  - go test -v -cover
+ - go build
