@@ -9,5 +9,5 @@ func main() {
 
 	fmt.Println(writeto.Writetofile(writeto.GetJokes()))
 
-	fmt.Println("golang爬虫")
+	fmt.Println("golang")
 }
