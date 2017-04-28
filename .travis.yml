@@ -4,6 +4,6 @@ go:
 
 install:
  - go get github.com/PuerkitoBio/goquery
- - $GOPATH=$GOPATH/Spider
+ - export GOPATH=$GOPATH/Spider;GOPATH=$HOME/gopath
 script:
  - go build
