@@ -10,4 +10,4 @@ script:
  - pwd
  - cd writeto
  - pwd
- - go build
+ - go test -t -cover
