@@ -8,6 +8,5 @@ install:
 script:
  - go env
  - pwd
- - cd writeto
- - pwd
- - go test -t -cover
+ - go build 
+ - go test -v -cover

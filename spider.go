@@ -1,13 +1,12 @@
 package main
 
 import (
-	"Spider/writeto"
 	"fmt"
 )
 
 func main() {
 
-	fmt.Println(writeto.Writetofile(writeto.GetJokes()))
+	fmt.Println(Writetofile(GetJokes()))
 
 	fmt.Println("golang爬虫")
 }

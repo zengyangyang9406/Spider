@@ -1,4 +1,4 @@
-package writeto
+package main
 
 import (
 	"testing"
