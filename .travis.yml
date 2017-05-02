@@ -8,4 +8,6 @@ install:
 script:
  - go env
  - pwd
+ - cd writeto
+ - pwd
  - go build
