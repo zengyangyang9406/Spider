@@ -9,11 +9,13 @@ install:
 before_install:
 
 script:
+ - go build
  - go test -v -covermode=count -coverprofile=coverage.out
  - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci -repotoken $COVERALLS_TOKEN
 
- before_deploy: 
+before_deploy: 
 deploy: 
+
 env:
   global:
     secure: "AgL6TavvSLscu5kXxMLGG41zeoaPscPqN5iWpuA2+tFrmfx86BoVRI38FsF8PnN3SmcVyNP97DTe56ynIJIELGPa7LUMkZp3xnO0ZNMHJGDjkfQ/zpPphuaYjD1exeMzPfJIYLa67TZYRibZ26Up7kImo3UfLZqBZ1VFBJkQz9qXKmrASYt0dFnN4e2hp/XksGJIVXaBTmAXWgNujGRKM92Go4LMWXPqb1eX19OuNGKJRcT1apmd8GNIwURJEZJayER/OWpGBtszSkyXQi4Q0q55ae8Li7gJCthx9X3/MM610+0bOXpMh6HJ4NkgcQiuXOio4znY7S1ybCisKsgtW+2G8ETolx3J9H61CW5XFSglZchdUK7ViMqlcjWzUOSOqopsm+Ow8NmS/JB0m8nTni0dNNLLYL6oxcx2lqJOw11ZxvbuP5Dbv1q54uWYAxR7yrwUw/X9kqidOPTbI0oPMuUoLI/Y5mMp+MI3fWS2WctzATXCgXQkM13OiYPrqIm2vE7KCLkT7RpFZ5R7DyVgNbvg6G3r5GATpLprLZzgNBzygw9gnmgaGkrbgb4cghVARU58bvLwJGpNjLg6i5Ovj9hK4qAXnE45H0rVDDMrWLUuwreJ64r465meqOyjWNI9y+nWOuI+w9TrmCiBvRQyn6g9TwqUFx7RGPMl78gc27g="
