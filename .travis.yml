@@ -4,9 +4,8 @@ go:
 
 install:
  - go get github.com/PuerkitoBio/goquery
- - export GOPATH=${TRAVIS_BUILD_DIR}/../../:$GOPATH
+
 script:
  - go env
- - echo ${TRAVIS_BUILD_DIR}
  - pwd
  - go build
